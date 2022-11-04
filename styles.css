@@ -439,7 +439,16 @@
     overflow: hidden;
   }
 
-  /* .cover-1,
+  .main__img--container {
+    margin-bottom: 1rem;
+    overflow: hidden;
+  }
+
+  .main__btn {
+    margin-bottom: 3rem;
+  }
+
+  .cover-1,
   .cover-2,
   .cover-3 {
     background-position: center;
@@ -448,5 +457,5 @@
     background-repeat: no-repeat;
     width: 100%;
     max-height: 80%;
-  } */
+  }
 }
