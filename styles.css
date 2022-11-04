@@ -394,6 +394,7 @@
 }
 
 .main__img--card {
+  /* background-image: url(img/Roots.png); */
   margin: 10px;
   height: 500px;
   width: 500px;
@@ -406,9 +407,9 @@
   /* background-image: linear-gradient(to right, #00dbde 0%, #fc00ff 100%); */
 }
 
-.cover-1,
-.cover-2,
-.cover-3 {
+.main__img--container .cover-1,
+.main__img--container .cover-2,
+.main__img--container .cover-3 {
   background-position: center;
   background-size: contain;
   object-fit: cover;
@@ -417,15 +418,35 @@
   max-height: 100%;
 }
 
-.cover-1 {
+.main__img--container .cover-1 {
   background-image: url(img/Roots.png);
   /* width: 100%;
   max-height: 100%;
   object-fit: cover; */
 }
-.cover-2 {
+.main__img--container .cover-2 {
   background-image: url(img/Tempest.png);
 }
-.cover-3 {
+.main__img--container .cover-3 {
   background-image: url(img/Dominium.png);
+}
+
+@media (max-width: 768px) {
+  .main__container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 450px);
+    overflow: hidden;
+  }
+
+  /* .cover-1,
+  .cover-2,
+  .cover-3 {
+    background-position: center;
+    background-size: contain;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    max-height: 80%;
+  } */
 }
